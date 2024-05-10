@@ -1,4 +1,7 @@
 import OpenAI from "openai";
+import express from "express"
+import bodyperser from "body-parser"
+import cors from "cors"
 
 const openai = new OpenAI({
     organization: "",
@@ -11,3 +14,12 @@ const chatCompletion = await openai.chat.completions.create({
 })
 
 console.log(chatCompletion.choices[0].message);
+
+
+
+
+
+
+// parte 2 - criação backened com api local
+
+
